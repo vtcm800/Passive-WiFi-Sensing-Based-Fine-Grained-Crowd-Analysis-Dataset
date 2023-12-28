@@ -10,15 +10,16 @@ To synthesize these datasets, two pedestrian tracking datasets (https://dil.atr.
 
 -the files with suffixs of "corrected" are the pedestrian tracking data corrected by the linear interpolation (for one second per pedestrian), which are mainly utilized for generating CDMs and includ items of timestamp, pedestrian ID, position_x (m), position_y (m), position_z (m), velocity (m/s), motion_direction (rad), facing_direction (rad).
 -the files with suffixs of "wifi" are the corresponding emulated WiFi sensing data and are mainly utilized for generating WDMs, which include cells per second composing of emulated locations of all randomly detected devices.
+-to simulate a denser environment, the WiDATC dataset is obtained by stacking the aligned 4 hours data per day of the ATC dataset into one hour.
 
 WiDIA: https://1drv.ms/f/c/edbf3ffa172dc60c/EvvsDqsfo3RNmzHrQTB4JqgBn9RSydex6rrxPBPsTw2XXg?e=buL7Tr
 WiATC: https://1drv.ms/f/c/edbf3ffa172dc60c/Er6u7XKbfoJOuvWvOPCBJ00BqH2QpkbjFl1ECDJ7yNaeWg?e=31Gssw
 WiDATC: https://1drv.ms/f/c/edbf3ffa172dc60c/Etv9qj2HzeBEnboUwQOegrEBCczxVYCN99aWEBR-kslyOA?e=id4eBs
 
 # Real-World Dataset
+The real-world dataset WiCAM are collected on a campus with the surveillance area of about 4000 $m^2$ (see [1] and [2] for details). Since the difficulty of labelling such a large-scale environment, only the real sensing result are provided. Similar to the files with suffixs of "wifi", the file of WiCAM includes cells per second composing of locations of all detected devices estimated by WiFi fingerprint-based localizaiton.
 
-second composing of emulated locations of all randomly detected devices estimated by WiFi fingerprint-based localizaiton.
-https://1drv.ms/f/c/edbf3ffa172dc60c/EqeGb6NVgItDlKBX6SvtnqQBOU7uUfCHV9V7Go3KcBoc4Q?e=OhGgnZ
+WiCAM: https://1drv.ms/f/c/edbf3ffa172dc60c/EqeGb6NVgItDlKBX6SvtnqQBOU7uUfCHV9V7Go3KcBoc4Q?e=OhGgnZ
 
 # References
 [1] L. Hao, B. Huang, B. Jia and G. Mao, "On the Fine-Grained Crowd Analysis Via Passive WiFi Sensing," in IEEE Transactions on Mobile Computing, doi: 10.1109/TMC.2023.3324334.
